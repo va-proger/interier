@@ -1,5 +1,99 @@
-.header{
+.header{ 
+    &-top{
+        background-color: #303030;
+        
+    }
+    &-bottom{
+        height: 17px;
+        background-color: #F5F6F8;
+    }
     &-wrapper{
         display: flex;
+        align-items: center;
+        padding-top: 19px;
+        padding-bottom: 15px;
+    }
+    &-logo{
+        // height: 54px;
+        align-self:stretch;
+        position: relative;
+        width: 179px;
+        margin-right: 84px;
+        svg{
+            position: absolute;
+            top: 12px;
+        }
+    }
+    &-menu{  
+        &__center{
+            margin-right: 154px;
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                li{
+                    list-style: none;
+                    a{
+                        white-space: nowrap;
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        position: relative;
+                        cursor: pointer;
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            transition: width .3s ease-in-out;
+                            background-color: #DF9D60;
+                            width: 0%;
+                            bottom: -10px;
+                            height: 0.3px;
+                        }
+                        &:focus::after{
+                            width: 100%;
+                        }
+                        &:hover::after{
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+           
+        }
+        &__popup{
+            color: #ffffff;
+            &.menu{
+                &-burger{
+                    span{
+                        margin-left: 100%;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    &-address{
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 15px;
+        margin-right: 40px;
+        &__top, &__bottom{
+            white-space: nowrap;
+        }
+    }
+    &-order{
+        a{
+            color: #BBCC68;
+            border: 1px solid #BBCC68;
+            padding: 18px 25px;
+            white-space: nowrap;
+        }
     }
 }

@@ -15,3 +15,8 @@ export function isWebp(){
       document.documentElement.classList.add(className); 
    })
 }
+export function animatedMenu(){
+   function centerMenuAnimated(){
+      console.log('есть');
+   }
+}
