@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Nunito:wght@300&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -51,7 +51,31 @@
         <div class="header-bottom"></div>
       </header>
       <main class="main">
+        <section class="hero">
+          <div class="hero-wrapper hero-swiper">
+            <div class="hero-slider swiper-wrapper">
+              <div class="hero-slider__slide swiper-slide" style="background: linear-gradient(119.1deg, #000000 0%, rgba(0, 0, 0, 0.01) 60.29%), url(../img/hero.jpg) no-repeat 0px 70%/cover; ">
+                <div class="hero-slider__descriptions" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);">
+                  <div class="hero-logo"><img src="img/hero-logo.svg" alt="logo"></div>
+                  <div class="hero-sublogo">Студия интерьера Яны Петерсон</div>
+                </div>
+              </div>
+              <div class="hero-slider__slide swiper-slide" style="background: linear-gradient(119.1deg, #000000 0%, rgba(0, 0, 0, 0.01) 60.29%), url(../img/portfolio/p2.jpg) no-repeat 0px 70%/cover; ">
+                <div class="hero-slider__descriptions" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);">
+                  <div class="hero-logo"><img src="img/hero-logo.svg" alt="logo"></div>
+                  <div class="hero-sublogo">Студия интерьера Яны Петерсон</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slider__navigation">
+              <div class="hero-slider__navigation-prev swiper-button-prev"></div>
+              <div class="hero-slider__count swiper-pagination"></div>
+              <div class="hero-slider__navigation-next swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
       </main>
+      <script src="/js/app.min.js"> </script>
     </div>
   </body>
 </html>

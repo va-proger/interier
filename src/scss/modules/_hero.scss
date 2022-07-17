@@ -1,0 +1,57 @@
+.hero{
+    &-wrapper{
+        
+    }
+    &-logo{
+        max-width: 332px;
+    }
+    &-sublogo{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 1.36;
+    }
+    &-slider{
+        &__count{
+            font-family: 'Montserrat', sans-serif;
+            color: #171717;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.2;
+            min-width: 35px;
+        }
+        &__descriptions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-slider{
+        &__navigation{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            bottom: 7.5%;
+            right: 5%;
+            transform: translate(-50%, 50%);
+            gap: 10px;
+            &-prev{
+                display: flex;
+                align-items: center;
+                background-image: url(../img/icons/arrow_prev.svg);
+                width: 50px;
+                height: 8px;
+                cursor: pointer;
+            }
+            &-next{
+                display: flex;
+                align-items: center;
+                background-image: url(../img/icons/arrow_next.svg);
+                width: 50px;
+                height: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+}
