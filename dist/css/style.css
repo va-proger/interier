@@ -240,3 +240,31 @@ body {
   height: 8px;
   cursor: pointer;
 }
+
+.portfolio-header {
+  background-color: #171717;
+}
+.portfolio-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.portfolio-header__title {
+  position: relative;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 600;
+}
+.portfolio-header__filter__list {
+  font-weight: 400;
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.portfolio-grid {
+  display: grid;
+}

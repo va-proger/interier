@@ -1,0 +1,55 @@
+.portfolio{
+    &-header{
+        background-color: #171717;
+        &__wrapper{
+            display: flex;
+            align-items: center;
+        }
+        &__title{
+            position: relative;
+            color: #ffffff;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 30px;
+            line-height: 1.23;
+            font-weight: 600;
+            &::after{
+
+            }
+        }
+        &__filter{
+            &__list{
+                font-weight: 400;
+                display: flex;
+                list-style: none;
+                color: #ffffff;
+                font-size: 20px;
+            }
+        }
+    }
+    &-body{
+
+    }
+    &-grid{
+        display: grid;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "portfolio-filter";
+@import "portfolio-modal";
